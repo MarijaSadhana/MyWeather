@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <ImageView
+            android:id="@+id/img_view"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@drawable/weather_cover"/>
+
+        <EditText
+            android:id="@+id/search_field"
+            android:layout_height="40dp"
+            android:layout_width="match_parent"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="100dp"
+            android:padding="10dp"
+            android:background="@drawable/search_field"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floating_search"
+            android:layout_height="30dp"
+            android:layout_width="30dp"
+            android:layout_alignEnd="@id/search_field"
+            android:layout_marginTop="105dp"
+            android:foreground="@drawable/ic_search"
+            android:backgroundTint="@color/white"
+            app:borderWidth="0dp"
+            app:layout_anchorGravity="center|end"
+            android:layout_marginEnd="10dp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/cityName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skopje"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:textAppearance="?android:textAppearanceLarge"/>
+
+    <ImageView
+        android:id="@+id/weather_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:src="@drawable/weather" />
+
+    <TextView
+        android:id="@+id/temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:text="20°C"
+        android:textAppearance="?android:textAppearanceMedium"/>
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:text="Description"
+        android:textAppearance="?android:textAppearanceMedium"/>
+
+</LinearLayout>
